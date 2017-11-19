@@ -1,0 +1,38 @@
+
+
+.formulario-produtos{
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 90%;
+    transform: translateY(-50%) translateX(-50%);
+}
+
+.lista-cadastro{
+  width: 100%;
+  background-color: white;
+  border-bottom: none;
+}
+
+.items-cadastro{
+  text-align: center;
+  position: relative;
+  color: black;
+  background-color: #dfdfdf;
+  margin-top: 2%;
+  border-radius: 5px;
+}
+
+
+.cadastro{
+  height: 30px;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 3%;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 50px;
+}
+

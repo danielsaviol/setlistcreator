@@ -1,0 +1,36 @@
+<!--
+  Generated template for the RegisterMusicPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>Adicionar Música</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+    <form class="formulario-music"  [formGroup] = "musicForm" (ngSubmit)="form_submit()" >
+      <ion-list class="lista-cadastro">
+        <ion-item class="items-info" >
+          <ion-input type="text" class="items-cadastro"  formControlName='nome' placeholder="Nome da música"></ion-input>
+        </ion-item>
+        <ion-item class="items-info" >
+          <ion-input  type="text" class="items-cadastro"  formControlName="artista" placeholder="Artista"></ion-input>
+        </ion-item>
+        <ion-item class="items-info" >
+          <ion-input type="text" class="items-cadastro"  formControlName="letra" placeholder="Letra"></ion-input>
+        </ion-item>
+        <ion-item class="items-info" >
+          <ion-input type="text" class="items-cadastro"  formControlName="cifra" placeholder="Cifra"></ion-input>
+        </ion-item>
+       
+      </ion-list>
+      <button ion-button full color="primary" type="submit" class="cadastro" [disabled]="!musicForm.valid"> Register </button>  
+    </form>
+
+</ion-content>

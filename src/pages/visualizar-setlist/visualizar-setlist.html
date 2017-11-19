@@ -1,0 +1,29 @@
+<!--
+  Generated template for the VisualizarSetlistPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title></ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+    <ion-list *ngFor="let p of setlists | async">
+        <ion-item-sliding  >
+     
+          <ion-item class="items-lista">
+              <h2 class="music-title" >{{ p.id_musicas }}</h2>
+              <button class="more" (click)="presentActionSheet(p.nome)" ><ion-icon class="icone" name="ios-more"></ion-icon></button>
+          </ion-item>
+         
+        </ion-item-sliding>
+        </ion-list>
+
+</ion-content>
